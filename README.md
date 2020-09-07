@@ -1,1 +1,3 @@
-# kata-programacion-Idukay
+# Prueba Idukay
+
+Autor: Marcelo Gallegos
