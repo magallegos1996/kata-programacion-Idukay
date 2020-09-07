@@ -1,0 +1,12 @@
+{
+  "name": "ejercicio-programacion",
+  "displayName": "ejercicio-programacion",
+  "expo": {
+    "name": "ejercicio-programacion",
+    "slug": "ejercicio-programacion",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
