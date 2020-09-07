@@ -61,7 +61,6 @@ oid-R | Google Play Intel x86 Atom
  Windows SDK: Not Found
 IDEs:
  Android Studio: Not Found
-4
  Visual Studio: Not Found
  Languages:
  Java: 1.8.0_161
