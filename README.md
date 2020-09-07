@@ -37,7 +37,7 @@ A continuación, verificar que todo esté configurado antes de iniciar la aplica
 ```sh
 $ react-native info
 ```
-*Se obtiene un resultado similar al siguiente:
+* Se obtiene un resultado similar al siguiente:
 
 ```shSystem:
  OS: Windows 10 10.0.18363
@@ -76,6 +76,38 @@ IDEs:
 * Verificar la sección BINARIES, SDK, LANGUAGES, NPMPACKAGES Y NPMGLOBALPACKAGES
 
 En caso de que Android SDK y el campo Java no esté configurado realizar los siguiente:
+
+* Ir a variables de entorno de Windows (Variables del sistema)
+* Verificar que exista la variable de entorno ’JAVA_HOME’
+* En caso de que no exista, crearla y colocar  como valor de la variable la ruta en la que se tenga instalado el jdk. En caso de no tener instalado este kit, descargarlo de la página oficial de Oracle e instalarlo
+* Verificar si existe la variable ANDROID_HOME
+* En caso de que no existe, crearla y poner como valor la ruta en la que se aloja el SDK
+* Modificar el Path del sistema agregando nuevas entradas con los siguientes valores
+
+```sh
+PATH=%ANDROID_HOME%/emulator
+PATH=%ANDROID_HOME%/tools
+PATH=%ANDROID_HOME%/tools/bin
+PATH=%ANDROID_HOME%/platform-tools
+PATH=%JAVA_HOME%/bin
+```
+* Reiniciar el equipo
+* En una terminal de Windows o Linux, ejecutar el siguiente comando para identificar qué dispositivos o emuladores tenemos disponibles.
+
+```sh
+$ adb device
+```
+* En caso de que se utilice un dispositivo físico Android, es necesario habilitar el debug mode por USB: [Habiliar Debug Mode por USB en Android](https://www.xatakandroid.com/tutoriales/comoconectar-movil-android-al-ordenador-adb)
+* Una vez finalizada esta configuración, conectaremos el móvil al computador y ejecutamos el siguiente comando
+```sh
+$ npm run android
+```
+* Para ejecutar las pruebas, ejecutar lo siguiente:
+```sh
+$ npm test
+```
+
+
 
 
 
