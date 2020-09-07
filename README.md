@@ -101,7 +101,7 @@ $ adb device
 ```sh
 $ npm run android
 ```
-* Para ejecutar las pruebas, ejecutar lo siguiente:
+* Para testing, ejecutar lo siguiente:
 ```sh
 $ npm test
 ```
