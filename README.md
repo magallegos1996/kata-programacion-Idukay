@@ -97,7 +97,7 @@ PATH=%JAVA_HOME%/bin
 ```sh
 $ adb device
 ```
-* En caso de que se utilice un dispositivo físico Android, es necesario habilitar el debug mode por USB: [Habiliar Debug Mode por USB en Android](https://www.xatakandroid.com/tutoriales/comoconectar-movil-android-al-ordenador-adb)
+* En caso de que se utilice un dispositivo físico Android, es necesario habilitar el debug mode por USB: [Habiliar Debug Mode por USB en Android](https://elandroidelibre.elespanol.com/2015/01/como-activar-el-modo-depuracion-usb-en-android.html)
 * Una vez finalizada esta configuración, conectaremos el móvil al computador y ejecutamos el siguiente comando
 ```sh
 $ npm run android
@@ -106,8 +106,9 @@ $ npm run android
 ```sh
 $ npm test
 ```
-
-
-
-
-
+### Tecnologías utilizadas
+| Tecnología | Versión |
+| ------ | ------ |
+| React Native | 0.62.2 |
+| React | 16.11.0 |
+| Jest | 25.2.6 |
